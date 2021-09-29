@@ -1,13 +1,15 @@
-<div class="container border mt-2 p-3">
-  <div class="row">
-    <app-recomendacao-inserir (recomendacaoInserida)="onRecomendacaoInserida($event)"></app-recomendacao-inserir>
+<div class="container border mt-2 p-3" style="background-color: rgb(152, 224, 188);">
+  <div class="container border mt-2 p-3" style="background-color: mintcream;" >
+    <div class="row">
+      <app-recomendacao-inserir (recomendacaoInserida)="onRecomendacaoInserida($event)"></app-recomendacao-inserir>
+    </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="row mt-2">
-    <div class="col-4" *ngFor="let recomendacao of recomendacoes">
-      <app-lista-recomendacao [recomendacao]="recomendacao"></app-lista-recomendacao>
+  <div class="container border mt-2 p-3" style="background-color: mintcream;">
+    <div class="row mt-2">
+      <div class="col-4" *ngFor="let recomendacao of recomendacoes">
+        <app-recomendacao-listar [recomendacao]="recomendacao"></app-recomendacao-listar>
+      </div>
     </div>
   </div>
 </div>
