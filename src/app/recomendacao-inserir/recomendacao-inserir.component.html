@@ -1,0 +1,9 @@
+<div class="col-md-6">
+  <div class="form-group">
+    <label>Escreva uma recomendação</label>
+    <input type="text" class="form-control" id="textoInput" #textoInput>
+  </div>
+</div>
+<div class="mt-2 col-12">
+  <button (click)="adicionar(textoInput.value)" class="btn btn-primary">Recomendar</button>
+</div>

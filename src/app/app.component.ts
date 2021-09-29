@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PAOO-P1';
+
+  recomendacoes = [
+    {texto: 'pode sair de casa? pode. é de bom tom? não.'}
+  ]
+
+  onRecomendacaoInserida(recomendacao){
+    this.recomendacoes = [recomendacao, ...this.recomendacoes]
+  }
+
 }
